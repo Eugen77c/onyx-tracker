@@ -11,8 +11,8 @@ window.ONYX_SITE = {
   email: 'kelm.eu@icloud.com',
   // Link to your GitHub repository, e.g. 'https://github.com/yourname/onyx-tracker'
   repoUrl: 'https://github.com/Eugen77c/onyx-tracker',
-  // Date of the privacy policy, e.g. '2026-10-26'
-  policyDate: '2026-10-26',
+  // Date of the privacy policy, e.g. '2026-10-25'
+  policyDate: '2026-10-25',
   // Where the Riot proxy runs, e.g. 'Hetzner, Germany' (shown in the privacy policy)
   proxyHosting: 'to be announced'
 }
