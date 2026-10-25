@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Onyx Tracker</title>
+    <meta name="description" content="Onyx Tracker is an unofficial desktop companion for VALORANT players to review their own matches round by round – with rule-based insights and a quiet, fair in-game overlay." />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site-config.js"></script>
+  </head>
+  <body>
+    <div class="setup" id="setup-banner" hidden>
+      <div class="wrap">Setup: open <code>assets/site-config.js</code> and fill in your name and contact e-mail before publishing. This notice disappears automatically.</div>
+    </div>
+
+    <header class="nav">
+      <div class="wrap">
+        <a class="brand" href="#top"><img src="assets/icon.png" alt="" width="30" height="30" />Onyx <span>Tracker</span></a>
+        <nav aria-label="Main">
+          <a href="#features" class="hide-sm">Features</a>
+          <a href="#fair-play" class="hide-sm">Fair play</a>
+          <a href="#data">Your data</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="wrap">
+        <div class="hero">
+          <div class="eyebrow">Unofficial VALORANT companion · Windows 10 &amp; 11</div>
+          <h1>Precision. Performance. <em>Progress.</em></h1>
+          <p class="lede">Onyx Tracker shows you how you actually played – match by match and round by round. Review your own games after you play, spot real patterns and keep track of your progress.</p>
+          <div class="strip" aria-label="Example match: 13 to 9, attack first half, defense second half">
+            <i></i><i></i><i class="l"></i><i></i><i class="l"></i><i></i><i></i><i class="l"></i><i></i><i></i><i class="l"></i><i></i>
+            <b></b>
+            <i class="d l"></i><i class="d"></i><i class="d l"></i><i class="d"></i><i class="d"></i><i class="d l"></i><i class="d l"></i><i class="d"></i><i class="d l"></i><i class="d"></i>
+            <span class="score"><strong>13</strong> : 9</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="#download">Download for Windows</a>
+            <a class="btn btn-quiet" href="#data">How your data is handled</a>
+          </div>
+          <p class="fineprint">Onyx Tracker is not endorsed by Riot Games. Screenshots show the built-in demo mode with fictional players.</p>
+        </div>
+
+        <div class="frame">
+          <div class="frame-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <img src="assets/overview.png" width="1440" height="900" alt="Onyx Tracker overview: current rank, win rate ring, K/D, KDA, headshot rate, ACS, ADR and KAST with trends and rank progression" />
+        </div>
+      </div>
+
+      <section id="features">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">What it does</div>
+            <h2>Built for reviewing your own games</h2>
+            <p>Every number is calculated from your own matches. Missing data stays missing – the app never fills gaps with guesses.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-text">
+              <h3>Every round, in detail</h3>
+              <p>Step through a match round by round: outcome, side, weapon, kills, deaths and assists, damage, registered head, body and leg hits, and a timeline of what happened. Each round is compared with the previous one and with your match average.</p>
+              <div class="chips"><span>Rounds 1–12 attack</span><span>13+ defense</span><span>Overtime</span><span>KAST</span><span>Trades</span></div>
+            </div>
+            <img class="shot" src="assets/rounds.png" width="1440" height="900" alt="Round analysis with round strip, round detail, hit breakdown and comparison" loading="lazy" />
+          </div>
+
+          <div class="feature flip">
+            <div class="feature-text">
+              <h3>Insights with their evidence</h3>
+              <p>Rule-based insights point out real patterns – a rising headshot rate, a weaker map, a gap between attack and defense. Each one lists the exact numbers and sample size behind it. There is no AI coach, and suggestions are meant for after the match.</p>
+              <div class="chips"><span>HS% by hits</span><span>ADR</span><span>ACS</span><span>Sample size</span></div>
+            </div>
+            <img class="shot" src="assets/insights.png" width="1440" height="900" alt="Insights page showing rule-based insights with evidence tables" loading="lazy" />
+          </div>
+
+          <div class="feature">
+            <div class="feature-text">
+              <h3>A quiet in-game overlay</h3>
+              <p>An optional overlay shows your own score, round and K/D/A. Your damage appears only after the round report arrives. It stays click-through, keeps the minimap, kill feed, crosshair and abilities clear, and you can position it with a visual editor.</p>
+              <div class="chips"><span>Click-through</span><span>HUD zones protected</span><span>Hotkeys</span></div>
+            </div>
+            <img class="shot" src="assets/overlay.png" width="1440" height="900" alt="Overlay editor with a game screen preview, protected HUD zones and overlay widgets" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section id="fair-play">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Fair play</div>
+            <h2>Reflection, not real-time advantage</h2>
+            <p>Onyx Tracker follows Riot's rules for third-party products. It is a training and reflection tool for your own data.</p>
+          </div>
+          <div class="ledger">
+            <div>
+              <h3>Shows</h3>
+              <ul>
+                <li>Your own stats, match history and round analysis</li>
+                <li>Score, round and phase that the game already shows you</li>
+                <li>Your damage after the round report has arrived</li>
+                <li>The official ranked leaderboard</li>
+              </ul>
+            </div>
+            <div class="never">
+              <h3>Never shows</h3>
+              <ul>
+                <li>Enemy positions, economy, weapons or ultimates</li>
+                <li>Tactical prompts or callouts during a round</li>
+                <li>Opponent scouting before or during a match</li>
+                <li>MMR or ELO estimates, or hidden players' identities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Your data</div>
+            <h2>Nothing is fetched until you opt in</h2>
+            <p>Riot API features are off by default. Your data stays on your PC, nothing is published, and there is no telemetry.</p>
+          </div>
+          <div class="optin">
+            <ol class="steps">
+              <li><div><strong>Enable the Riot data source</strong>In Settings → Data sources. Until then the app works with locally recorded or demo data only.</div></li>
+              <li><div><strong>Turn on "Allow data sharing (opt-in)"</strong>The switch explains what is fetched. Turning it off stops every request immediately.</div></li>
+              <li><div><strong>Sign in with Riot</strong>Riot Sign On opens in your browser. Onyx Tracker never sees or stores your Riot password, and it only requests your own matches.</div></li>
+            </ol>
+            <img class="shot" src="assets/optin.png" width="1440" height="900" alt="Settings with the Riot API provider, the opt-in switch and the disabled Riot sign-in until consent is given" loading="lazy" />
+          </div>
+
+          <div class="table-scroll" style="margin-top: 40px">
+            <table>
+              <thead>
+                <tr><th>Riot API</th><th>Used for</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>ACCOUNT-V1</code></td><td>Your Riot ID after you sign in with Riot Sign On</td></tr>
+                <tr><td><code>VAL-MATCH-V1</code></td><td>Your own match list and match details – never other players' histories</td></tr>
+                <tr><td><code>VAL-CONTENT-V1</code></td><td>Names of agents, maps and equipment</td></tr>
+                <tr><td><code>VAL-RANKED-V1</code></td><td>The official leaderboard; anonymized players stay anonymous</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <div class="wrap">
+          <div class="download">
+            <img src="assets/icon.png" alt="" width="72" height="72" />
+            <div>
+              <h3>Onyx Tracker for Windows</h3>
+              <p>Windows 10 and 11, 64-bit. Includes a demo mode, so you can explore everything without playing a match.</p>
+            </div>
+            <a class="btn btn-primary" data-site-href="repo" href="#download">Get the installer</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="links">
+          <a href="privacy.html">Privacy policy</a>
+          <span data-optional>Contact: <span data-site="email">you@example.com</span></span>
+          <a data-site-href="repo" href="#download">Source &amp; releases</a>
+        </div>
+        <p>Onyx Tracker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
+        <p>The app icon, rank emblems and all artwork are original designs. No Riot or VALORANT logos or game assets are used.</p>
+      </div>
+    </footer>
+  </body>
+</html>
