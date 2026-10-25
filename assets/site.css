@@ -72,20 +72,6 @@ button:focus-visible {
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 
-/* setup notice (only while placeholders are unfilled) */
-.setup {
-  background: rgba(255, 159, 10, 0.14);
-  color: var(--orange);
-  font-size: var(--step--1);
-  font-weight: 600;
-}
-.setup .wrap {
-  padding-block: 10px;
-}
-.setup code {
-  color: var(--fg);
-}
-
 /* nav */
 .nav {
   position: sticky;
